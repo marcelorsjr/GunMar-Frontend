@@ -1,0 +1,36 @@
+.btn-info {
+  color: #fff;
+  background-color: #1E365C;
+  border-color: #1E365C;
+}
+
+.btn-info:focus,
+.btn-info.focus {
+  color: #fff;
+  background-color: #132949;
+  border-color: #132949;
+}
+.btn-info:hover {
+  color: #fff;
+  background-color: #132949;
+  border-color: #132949;
+}
+
+
+resultTitle {
+    color: #1E365C;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+}
+
+resultUrl {
+	color: #355484;
+	font-size: 16px;
+	display: block;
+}
+
+resultDescription {
+
+}
