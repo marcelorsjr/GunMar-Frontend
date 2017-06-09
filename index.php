@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="utf-8">
@@ -13,7 +12,8 @@
 </head>
 <body>
   </br>
-  <a style="margin-left: 30px; cursor: pointer;" href="about.html">Sobre</a>
+  <form action="results.php" method="get">
+      <a style="margin-left: 30px; cursor: pointer;" href="about.html">Sobre</a>
   <div class="container container-table">
     <div class="row vertical-center-row">
         <div class="text-center col-md-4 col-md-offset-4">
@@ -23,18 +23,18 @@
 
     <div class="row vertical-center-row">
         <div class="text-center col-md-8 col-md-offset-2">
-           <input type="text" class="form-control" id="usr">
+           <input type="text" name="query" class="form-control" id="usr">
         </div>
     </div>
     </br>
     <div class="row vertical-center-row">
         <div class="text-center col-md-4 col-md-offset-4">
-            <button type="button" class="btn btn-info"> Pesquisar
-              <span class="glyphicon glyphicon-search"></span>
-            </button>
+            <input type="submit" class="btn btn-info" value="Pesquisar">
         </div>
     </div>
   </div>
+  </form>
+
 
 
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,17 +13,16 @@
   <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-
+<form action="results.php" method="get">
 <div class="container-fluid">
     <div class="row" style="background-color: #fafafa; ">
-      <div class="col-xs-2 custom" style="height: 100px"><a href="index.html"><img src="logo-gray.png" alt="GunMar" style="width: 100%; max-height: 100px; max-width: 200px; top: 50%; transform: translateY(-50%); position: relative;"></a></div>
-      <div class="col-xs-8 custom" style="height: 100px"><input type="text" class="form-control" id="usr" style="top: 50%; transform: translateY(-50%); position: relative; height: 40px;"></div>
-      <div class="col-xs-2 custom" style="height: 100px"><button style="top: 50%; transform: translateY(-50%); position: relative; height: 40px;" type="button" class="btn btn-info"> Pesquisar
-              <span class="glyphicon glyphicon-search"></span>
-            </button></div>
+      <div class="col-xs-2 custom" style="height: 100px"><a href="index.php"><img src="logo-gray.png" alt="GunMar" style="width: 100%; max-height: 100px; max-width: 200px; top: 50%; transform: translateY(-50%); position: relative;"></a></div>
+      <div class="col-xs-8 custom" style="height: 100px"><input type="text" name="query" class="form-control" id="usr" style="top: 50%; transform: translateY(-50%); position: relative; height: 40px;" value="{SEARCH_QUERY}"></div>
+      <div class="col-xs-2 custom" style="height: 100px"><input style="top: 50%; transform: translateY(-50%); position: relative; height: 40px;" type="submit" class="btn btn-info" value="Pesquisar"></div>
     </div>
 
   </div>
+  </form>
 
 </br>
 </br>
@@ -31,22 +31,19 @@
     <div class="row vertical-center-row">
         <div class="col-md-12">
         
+        <!-- BEGIN BLOCK_RESULT -->
       <div style="    box-shadow: 0px 3px 10px grey; padding: 5px">
-        <resultTitle>Barack Obama and Michele Office</resultTitle>
-        <resultUrl>https://www.barackobama.com/</resultUrl>
+        <a href="{RESULT_URL}" target="__blank"> <resultTitle>{RESULT_TITLE}</resultTitle></a>
+        
+        <resultUrl>{RESULT_URL}</resultUrl>
         <resultDescription>
-          Barack Hussein Obama II is an American politician who served as the 44th President of the United States from 2009 to 2017. He is the first African American to ...
+          {RESULT_DESCRIPTION}
         </resultDescription>
       </div>
 
       </br>
-           <div style="    box-shadow: 0px 3px 10px grey; padding: 5px">
-        <resultTitle>Barack Obama (@BarackObama) | Twitter</resultTitle>
-        <resultUrl>https://twitter.com/barackobama</resultUrl>
-        <resultDescription>
-          15.5K tweets • 2067 photos/videos • 90.1M followers. "On this National Gun Violence Awareness Day, let your voice be heard and show your commitment to ...
-        </resultDescription>
-      </div>
+       <!-- END BLOCK_RESULT -->
+
 
   </div>
 </div>
