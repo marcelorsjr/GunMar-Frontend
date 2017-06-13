@@ -16,9 +16,9 @@
   <form action="results.php" method="get">
     <div class="container-fluid">
       <div class="row" style="background-color: #fafafa; ">
-        <div class="col-xs-2 custom" style="height: 100px"><a href="index.php"><img src="logo-gray.png" alt="GunMar" style="width: 100%; max-height: 100px; max-width: 200px; top: 50%; transform: translateY(-50%); position: relative;"></a></div>
-        <div class="col-xs-8 custom" style="height: 100px"><input type="text" name="query" class="form-control" id="usr" style="top: 50%; transform: translateY(-50%); position: relative; height: 40px;" value="{SEARCH_QUERY}"></div>
-        <div class="col-xs-2 custom" style="height: 100px"><input style="top: 50%; transform: translateY(-50%); position: relative; height: 40px;" type="submit" class="btn btn-info" value="Pesquisar"></div>
+        <div class="col-md-2 custom" style="height: 100px; text-align: center;"><a href="index.php"><img src="logo-gray.png" alt="GunMar" style="width: 100%; max-height: 100px; max-width: 200px; top: 50%; transform: translateY(-50%); position: relative; display: inline-block;"></a></div>
+        <div class="col-md-8 custom" style="height: 100px"><input type="text" name="query" class="form-control" id="usr" style="top: 50%; transform: translateY(-50%); position: relative; height: 40px;" value="{SEARCH_QUERY}"></div>
+        <div class="col-md-2 custom" style="height: 100px"><input style="top: 50%; transform: translateY(-50%); position: relative; height: 40px; width: 100%" type="submit" class="btn btn-info" value="Pesquisar"></div>
       </div>
 
     </div>
@@ -29,7 +29,20 @@
 
 <div class="container container-table">
   <div class="row vertical-center-row">
-    <div class="col-md-8">
+    <div class="col-md-4 col-md-push-8">
+
+    <div style=" box-shadow: 0px 3px 10px grey; padding: 5px">
+      <img src="http://abovethelaw.com/wp-content/uploads/2015/04/barack-obama.jpg" style="display: inline-block;max-width: 100%">
+      <a href="{RESULT_URL}" target="__blank"> <resultTitle>{RESULT_TITLE}</resultTitle></a>
+      <resultUrl>{RESULT_URL}</resultUrl>
+      <resultDescription>{RESULT_DESCRIPTION}</resultDescription>
+    </div>
+
+  </br>
+
+
+</div>
+    <div class="col-md-8 col-md-pull-4">
 
       <!-- BEGIN BLOCK_RESULT -->
       <div style="    box-shadow: 0px 3px 10px grey; padding: 5px">
@@ -44,19 +57,7 @@
 
 
   </div>
-      <div class="col-md-4">
 
-      <div style=" box-shadow: 0px 3px 10px grey; padding: 5px">
-        <img src="http://abovethelaw.com/wp-content/uploads/2015/04/barack-obama.jpg" style="display: inline-block;max-width: 100%">
-        <a href="{RESULT_URL}" target="__blank"> <resultTitle>{RESULT_TITLE}</resultTitle></a>
-        <resultUrl>{RESULT_URL}</resultUrl>
-        <resultDescription>{RESULT_DESCRIPTION}</resultDescription>
-      </div>
-
-    </br>
-
-
-  </div>
 </div>
 </div>
 
